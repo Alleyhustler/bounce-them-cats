@@ -1,0 +1,60 @@
+body {
+    margin: 0;
+    overflow: hidden;
+    font-family: Arial, sans-serif;
+}
+
+#container {
+    position: relative;
+    width: 100vw;
+    height: 100vh;
+    background-color: #ffebcd;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+button {
+    position: absolute;
+    bottom: 500px;
+    padding: 10px 20px;
+    background-color: #f39c12;
+    border: none;
+    border-radius: 5px;
+    color: white;
+    cursor: pointer;
+    font-size: 16px;
+    left: 850px;
+}
+
+button:hover {
+    background-color: #e67e22;
+}
+
+.cat {
+    position: absolute;
+    width: 200px;
+    height: 200px;
+    transition: transform 0.2s ease-in-out;
+}
+
+/* Social Media Icons Styling */
+.socials {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    display: flex;
+    gap: 10px;
+    z-index: 1000; /* Ensure icons are on top */
+}
+
+.social-icon {
+    width: 40px; /* Adjust size as needed */
+    height: 40px; /* Adjust size as needed */
+    display: block;
+    transition: opacity 0.3s ease;
+}
+
+.social-icon:hover {
+    opacity: 0.7;
+}
